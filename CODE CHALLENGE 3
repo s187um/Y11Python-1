@@ -1,0 +1,46 @@
+answer = "NO"
+while answer == "NO":
+  print("Welcome to...")
+  print("")
+  print("The League Registration")
+  print("")
+  fname = str(input("Enter your first name: ")).title()
+  print("")
+  lname = str(input("Enter your surname: ")).title()
+  print("")
+  username = str(input("Enter your username: ")).title()
+  print("")
+  email = str(input("Enter your email: ")).title()
+  print("")
+  skilllvl = str(input("How skillfull are you E for expert or C for Casual: ")).upper()
+  print("")
+  if skilllvl == "C":
+    print(fname)
+    print("")
+    print(lname)
+    print("")
+    print(username)
+    print("")
+    print(email)
+    print("")
+    print("Casual")
+    
+  else:
+    print(fname)
+    print("")
+    print(lname)
+    print("")
+    print(username)
+    print("")
+    print(email)
+    print("")
+    print("Expert")
+  
+  print("")  
+  answer = str(input("Are these your correct details? Yes or No")).upper()
+  
+  
+print("")
+print("Welcome to You Dunn Know!")
+print("")
+print("Please pay an entry fee of £7.99")
