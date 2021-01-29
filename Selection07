@@ -1,0 +1,7 @@
+number = int(input("Pick a random number. "))
+if number < 10:
+    print("Too Low!")
+elif number < 21:
+    print("Correct!")
+else:
+    print("Too high you crazy pie!")
