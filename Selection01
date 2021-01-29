@@ -1,0 +1,8 @@
+no1 = int(input("Pick a number. "))
+no2 = int(input("Pick a different number. "))
+if no1 > no2:
+    print(no2)
+    print(no1)
+else:
+    print(no1)
+    print(no2)
