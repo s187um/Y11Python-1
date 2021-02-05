@@ -1,0 +1,4 @@
+number = 0
+while number < 6:
+    number = int(input("Pick a number! "))
+print("The last number you entered was", number)
