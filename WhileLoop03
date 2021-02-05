@@ -1,0 +1,7 @@
+total = 0
+answer = "y"
+while answer == "y":
+    number = int(input("Pick a number! "))
+    total = total + number
+    answer = str(input("Add another Y or N! ")).lower()
+print("The total is", total)
