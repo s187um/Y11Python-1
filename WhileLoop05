@@ -1,0 +1,14 @@
+number = 50
+count = 0
+guess = 0
+while guess != number:
+    guess = int(input("Try and guess the number! "))
+    count = count + 1
+    if guess > number:
+        print("Too High!")
+    elif guess < number:
+        print("Too Low!")
+    else:
+        print("That was right!")
+        
+ 
