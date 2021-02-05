@@ -1,0 +1,6 @@
+total = int(input("Pick a random number! "))
+print("The total number is now", total)
+while total < 50:
+    number = int(input("Pick another number! "))
+    total = total + number
+    print("The total number is now", total)
