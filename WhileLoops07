@@ -1,9 +1,0 @@
-guess = 0
-number = int(input("Pick a random number! "))
-print("There are", number, "green bottles hanging on the wall,")
-print(number, "green bottles hangning on the wall")
-print("And if one green bottle accidently falls")
-answer = number - 1
-while guess != answer:
-    guess = int(input("How many would there be now? "))
-print("Correct!")
