@@ -1,0 +1,8 @@
+count = 0
+answer = "y"
+while answer == "y":
+    person = str(input("Who do you want to invite? ")).title()
+    print(person, "was invited!")
+    count = count + 1
+    answer = str(input("Do you want to invite someone else Y or N? ")).lower()
+print("You invited", count,"guests!")
