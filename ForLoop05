@@ -1,0 +1,6 @@
+count = 1
+number = int(input("Pick a number between 1 and 12! "))
+for i in range (12):
+    total = number * count
+    count = count + 1
+    print(total)
