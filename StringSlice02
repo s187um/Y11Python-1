@@ -1,0 +1,7 @@
+fname = str(input("What is your first name? ")).title()
+lname = str(input("What is your last name? ")).title()
+space = (" ")
+full = fname + space + lname
+length = len(full)
+print(full)
+print(length)
