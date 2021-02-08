@@ -1,0 +1,5 @@
+rhyme = str(input("Pick the first line of a nursery rhyme! "))
+length = len(rhyme)
+number1 = int(input("Pick a number! "))
+number2 = int(input("Pick a larger number! "))
+print(rhyme[number1:number2])
