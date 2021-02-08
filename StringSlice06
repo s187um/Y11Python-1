@@ -1,0 +1,9 @@
+name = str(input("What is your name? ")).title()
+length = len(name)
+if length > 4:
+    print(name.lower())
+else:
+    lname = str(input("What is your last name? ")).title()
+    full = name + lname
+    print(full)
+    print(name.upper())
