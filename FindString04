@@ -1,0 +1,6 @@
+num = ("123456789")
+three = "3"
+eight = "8"
+location3 = num.find(three)
+location8 = num.find(eight)
+print("The 3 is located at", location3,"position and the 8 is located at", location8,"position!")
