@@ -1,0 +1,10 @@
+total = 0
+for i in range (5):
+    number = int(input("Pick a number! "))
+    answer = str(input("Do you want to use this number, Y or N? ")).upper()
+    if answer == "Y":
+        total = total + number
+        print("Number added!")
+    else:
+        print("Number Discarded!")
+print("The total is", total)
