@@ -1,0 +1,7 @@
+name = str(input("What is your name? ")).lower()
+fl = (name[0])
+if fl == "a" or fl == "i" or fl == "o" or fl == "u" or fl == "e":
+    name = ("")
+else:
+    age = 0
+print(name.title())
