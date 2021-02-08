@@ -1,0 +1,6 @@
+count = 1
+while count < 10:
+    name = str(input("What is your name? ")).title()
+    code = (name[0:3])
+    print(code, count)
+    count = count + 1
