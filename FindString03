@@ -1,0 +1,4 @@
+email = ("TheQueen@BuckinghamPalace.com")
+at = "@"
+location = email.find(at)
+print("The @ is located at", location,"postion!")
