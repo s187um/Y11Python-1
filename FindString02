@@ -1,0 +1,4 @@
+url = ("google.com")
+dot = "."
+location = url.find(dot)
+print("The . is located at", location,"postion!")
