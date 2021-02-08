@@ -1,0 +1,7 @@
+amount = int(input("How many people do you want to invite? "))
+if amount > 10:
+    print("Too many people!")
+else:
+    for i in range (10):
+        person = str(input("Who do you want to invite? "))
+        print(person, "has been invited!")
