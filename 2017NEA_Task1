@@ -1,0 +1,21 @@
+answer = ("N")
+while answer == "N":
+    fname = str(input("First name: ")).title()
+    nname = str(input("Nickname: ")).title()
+    email = str(input("Email adress: "))
+    skill = str(input("Skill level (E for expert, C for casual): ")).upper()
+    if skill == "E":
+        word = ("Expert")
+    else:
+        word = ("Casual")
+    print("")
+    print("Please review your details:")
+    print("")
+    print(fname)
+    print(nname)
+    print(email)
+    print(word)
+    print("")
+    answer = str(input("Are these details correct? Y/N: ")).upper()
+    print("")
+print("Many Thanks!")
