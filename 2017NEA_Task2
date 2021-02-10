@@ -1,0 +1,25 @@
+answer = ("Y")
+print("Welcome to the entry page!")
+print("")
+while answer == "Y":
+    email = str(input("Email adress: "))
+    skill = str(input("Skill level (E for expert, C for casual): ")).upper()
+    payment = str(input("Enter payment country UK/US/AU: ")).upper()
+    print("")
+    if skill == "E" and payment == "UK":
+        money = ("45.00 GBP")
+    elif skill == "E" and payment == "US":
+        money = ("67.50 USD")
+    elif skill == "E" and payment == "AU":
+        money = ("90.00 AUD")
+    elif skill == "C" and payment == "UK":
+        money = ("30.00 GBP")
+    elif skill == "C" and payment == "US":
+        money = ("45.00 USD")
+    else:
+        money = ("60.00 AUD")
+    print("The",payment,"fee is",money)
+    print("")
+    answer = str(input("Do you wish to add another payment? Y/N: ")).upper()
+    print("")
+print("Thank you!")
