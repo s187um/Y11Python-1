@@ -1,0 +1,158 @@
+import random
+team1pld = 4
+team2pld = 4
+team3pld = 4
+team1score = 0
+team2score = 0
+team3score = 0
+goallist = [1,1,1,2,2,2,2,3,3,4,5]
+zteam1 = str(input("Team 1 Name: "))
+zteam2 = str(input("Team 2 Name: "))
+zteam3 = str(input("Team 3 Name: "))
+ateam1 = random.choice(goallist)
+cteam1 = random.choice(goallist)
+dteam1 = random.choice(goallist)
+fteam1 = random.choice(goallist)
+ateam2 = random.choice(goallist)
+bteam2 = random.choice(goallist)
+dteam2 = random.choice(goallist)
+eteam2 = random.choice(goallist)
+bteam3 = random.choice(goallist)
+cteam3 = random.choice(goallist)
+eteam3 = random.choice(goallist)
+fteam3 = random.choice(goallist)
+if ateam1 > ateam2:
+    team1score = team1score + 3
+elif ateam1 < ateam2:
+    team2score = team2score + 3
+else:
+    team1score = team1score + 1
+    team2score = team2score + 1
+
+if bteam2 > bteam3:
+    team2score = team2score + 3
+elif bteam3 < bteam2:
+    team3score = team3score + 3
+else:
+    team3score = team3score + 1
+    team2score = team2score + 1
+
+if cteam1 > cteam3:
+    team1score = team1score + 3
+elif cteam1 < cteam3:
+    team3score = team3score + 3
+else:
+    team1score = team1score + 1
+    team3score = team3score + 1
+
+if dteam1 > dteam2:
+    team1score = team1score + 3
+elif dteam1 < dteam2:
+    team2score = team2score + 3
+else:
+    team1score = team1score + 1
+    team2score = team2score + 1
+
+if eteam2 > eteam3:
+    team2score = team2score + 3
+elif eteam2 < eteam3:
+    team3score = team3score + 3
+else:
+    team3score = team3score + 1
+    team2score = team2score + 1
+
+if fteam1 > fteam3:
+    team1score = team1score + 3
+elif fteam1 < fteam3:
+    team3score = team3score + 3
+else:
+    team1score = team1score + 1
+    team3score = team3score + 1
+print("Randomising Fixture Results...")
+print("")
+print(zteam1,ateam1,"-",ateam2,zteam2)
+print("")
+print(zteam2,bteam2,"-",bteam3,zteam3)
+print("")
+print(zteam1,cteam1,"-",cteam3,zteam3)
+print("")
+print(zteam2,dteam2,"-",dteam1,zteam1)
+print("")
+print(zteam3,eteam3,"-",eteam2,zteam2)
+print("")
+print(zteam3,fteam3,"-",fteam1,zteam1)
+print("")
+if team1score > team2score and team1score > team3score:
+    hello = 0
+    if team2score > team3score:
+        theteamarray = [[zteam1,team1pld,team1score],[zteam2,team2pld,team2score],[zteam3,team3pld,team3score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+        
+        
+    elif team2score < team3score:
+        theteamarray = [[zteam1,team1pld,team1score],[zteam3,team2pld,team3score],[zteam2,team3pld,team2score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+    else:
+        theteamarray = [[zteam1,team1pld,team1score],[zteam2,team2pld,team2score],[zteam3,team3pld,team3score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+elif team2score > team1score and team2score > team3score:
+    hi = 0
+    if team1score > team3score:
+        theteamarray = [[zteam2,team1pld,team2score],[zteam1,team2pld,team1score],[zteam3,team3pld,team3score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+    elif team1score < team3score:
+        theteamarray = [[zteam2,team1pld,team2score],[zteam3,team2pld,team3score],[zteam1,team3pld,team1score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+    else:
+        theteamarray = [[zteam2,team1pld,team2score],[zteam1,team2pld,team1score],[zteam3,team3pld,team3score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+elif team3score > team1score and team3score > team2score:
+    body = 0
+    if team1score > team2score:
+        theteamarray = [[zteam3,team1pld,team3score],[zteam1,team2pld,team1score],[zteam2,team3pld,team2score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+    elif team1score < team2score:
+        theteamarray = [[zteam3,team1pld,team3score],[zteam1,team2pld,team1score],[zteam1,team3pld,team1score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+    else:
+        theteamarray = [[zteam3,team1pld,team3score],[zteam1,team2pld,team1score],[zteam2,team3pld,team2score]]
+        print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+        for eachteam in theteamarray:
+            print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+elif team1score == team2score and team1score > team3score:
+    theteamarray = [[zteam1,team1pld,team1score],[zteam2,team2pld,team2score],[zteam3,team3pld,team3score]]
+    print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+    for eachteam in theteamarray:
+        print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+elif team3score == team2score and team3score > team1score:
+    theteamarray = [[zteam2,team1pld,team2score],[zteam3,team2pld,team3score],[zteam1,team3pld,team1score]]
+    print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+    for eachteam in theteamarray:
+        print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+elif team1score == team3score and team1score > team2score:
+    theteamarray = [[zteam1,team1pld,team1score],[zteam3,team2pld,team3score],[zteam2,team3pld,team2score]]
+    print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+    for eachteam in theteamarray:
+        print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
+
+else:
+    theteamarray = [[zteam1,team1pld,team1score],[zteam2,team2pld,team2score],[zteam3,team3pld,team3score]]
+    print("{0:25}{1:25}{2:25}".format("Team","Played","Points"))
+    for eachteam in theteamarray:
+        print("{0:25}{1:25}{2:25}".format(eachteam[0],eachteam[1],eachteam[2]))
