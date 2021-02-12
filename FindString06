@@ -1,0 +1,11 @@
+uknumber = ("07654322968")
+answer = str(input("Do you want to check the number? Y/N: ")).upper()
+if answer == "Y":
+    ukcheck = len(uknumber)
+    ukcheck2 = uknumber.find("0")
+    if ukcheck == 11 and ukcheck2 == 0:
+        print("Valid UK phone number!")
+    else:
+        print("Not a real UK phone number.")
+else:
+    print("Have a nice day!")
