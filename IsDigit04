@@ -1,0 +1,21 @@
+count = 0
+valid = 0
+invalid = 0
+loop = True
+while loop == True:
+    dob = str(input("DOB: "))
+    count = count + 1
+    check = dob.isdigit()
+    check2 = len(dob)
+    if check == True and check2 == 6:
+        print("It is all numbers!")
+        valid = valid + 1
+    else:
+        print("It contains a letter or symbol, or is not 6 numbers long.")
+        invalid = invalid + 1
+    answer = str(input("Do you want to check another? Y/N: ")).upper()
+    if answer == "Y":
+        print("Checking another DOB...")
+    else:
+        loop = False
+print("You checked",count,"DOBs,",valid,"of which were valid and the other",invalid,"were invalid.")
