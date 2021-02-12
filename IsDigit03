@@ -1,0 +1,20 @@
+count = 0
+valid = 0
+invalid = 0
+loop = True
+while loop == True:
+    number = str(input("Phone Number: "))
+    count = count + 1
+    check = number.isdigit()
+    if check == True:
+        print("It is all numbers!")
+        valid = valid + 1
+    else:
+        print("It contains a letter or symbol.")
+        invalid = invalid + 1
+    answer = str(input("Do you want to check another? Y/N: ")).upper()
+    if answer == "Y":
+        print("Checking another phone number...")
+    else:
+        loop = False
+print("You checked",count,"numbers,",valid,"of which were valid and the other",invalid,"were invalid.")
