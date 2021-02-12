@@ -1,0 +1,6 @@
+number = str(input("Phone Number: "))
+check = number.isdigit()
+if check == True:
+    print("It is all numbers!")
+else:
+    print("It contains a letter or symbol.")
