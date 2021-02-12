@@ -1,0 +1,14 @@
+count = 0    
+loop = True
+while loop == True:
+    number = str(input("Phone Number: "))
+    check = number.isdigit()
+    if check == True:
+        print("It is all numbers!")
+    else:
+        print("It contains a letter or symbol.")
+    answer = str(input("Do you want to check another? Y/N: ")).upper()
+    if answer == "Y":
+        print("Checking another phone number...")
+    else:
+        loop = False
