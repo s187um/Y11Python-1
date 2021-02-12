@@ -1,0 +1,17 @@
+import random
+colour = ["red","green","blue","purple"]
+correct = false
+colourran = random.choice(colour)
+while correct == False:
+    choice = str(input("Choose a random colour!").lower()
+    if choice == colourran:
+        print("Correct!")
+        correct = True
+    elif colourran == "blue":
+        print("I bet you're blue with sadness!")
+    elif colourran == "green":
+        print("I bet you're green with envy!")
+    elif colourran == "red":
+        print("I bet you're red with anger!")
+    else:
+        print("I bet you're purple with fustration!")
